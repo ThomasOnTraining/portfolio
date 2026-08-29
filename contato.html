@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato · Thomas Thome</title>
+  <meta name="description" content="Entre em contato com Thomas Thome: e-mail e GitHub.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho-inner">
+      <a href="index.html" class="logo">~/thomas-thome</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+      <nav id="nav" class="nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="contato.html" aria-current="page">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <p class="sobretitulo entrada">Contato</p>
+      <h1 class="entrada d1">Respondo rápido, <em>especialmente</em> se o assunto for código.</h1>
+      <p class="lede entrada d2">
+        Estágios, projetos de estudo, feedback nos meus projetos ou só uma conversa
+        sobre back-end e segurança: o canal que preferir abaixo.
+      </p>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <!-- TODO: se criar LinkedIn depois, adicione um item aqui seguindo o modelo abaixo -->
+        <ul class="contato-lista">
+          <li class="reveal">
+            <a href="mailto:thomas@veia.dev">
+              <span>E-mail · thomas@veia.dev</span>
+              <span class="seta" aria-hidden="true">→</span>
+            </a>
+          </li>
+          <li class="reveal">
+            <a href="https://github.com/ThomasOnTraining" rel="noopener" target="_blank">
+              <span>GitHub · @ThomasOnTraining</span>
+              <span class="seta" aria-hidden="true">→</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-inner">
+      <p>© <span data-ano></span> Thomas Thome</p>
+      <p>Feito à mão com HTML, CSS e café · <a href="https://github.com/ThomasOnTraining/portfolio" rel="noopener" target="_blank">Código-fonte</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

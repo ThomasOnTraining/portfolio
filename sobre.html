@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre · Thomas Thome</title>
+  <meta name="description" content="Sobre Thomas Thome: estudante técnico de Desenvolvimento de Sistemas, com foco em back-end e segurança.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho-inner">
+      <a href="index.html" class="logo">~/thomas-thome</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+      <nav id="nav" class="nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="sobre.html" aria-current="page">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <p class="sobretitulo entrada">Sobre mim</p>
+      <h1 class="entrada d1">Estudante de Desenvolvimento de Sistemas, <em>aprendendo</em> construindo.</h1>
+    </section>
+
+    <section class="secao">
+      <div class="container secao-texto">
+        <p class="entrada">
+          Sou estudante do ensino médio técnico em <strong>Desenvolvimento de
+          Sistemas</strong>. <!-- TODO: 1 frase sobre como você chegou à área -->
+          Gosto de entender como as coisas funcionam por trás da tela, e programar
+          me dá isso todos os dias.
+        </p>
+        <p class="entrada d1">
+          Meu interesse puxa para o <strong>back-end e segurança</strong>: gosto de entender
+          o que acontece entre a requisição e o banco de dados, e de pensar no que pode dar
+          errado antes que dê. No front-end, aprendo o suficiente para levar minhas próprias
+          ideias até a tela, como neste site.
+        </p>
+        <p class="entrada d2">
+          Ainda estou no começo, e este portfólio é justamente sobre isso: aprender em
+          público. Cada projeto aqui começou como algo que eu não sabia fazer, e terminou
+          como algo que funciona.
+        </p>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <div class="secao-cab reveal"><h2>Habilidades</h2></div>
+        <div class="habilidades">
+          <!-- TODO: deixe honesto. Recrutador prefere lista real a lista inflada. -->
+          <div class="grupo-hab reveal">
+            <h3>Confortável hoje</h3>
+            <ul class="lista-hab">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li>
+              <li>SQL</li><li>Git &amp; GitHub</li><li>Linux (dia a dia)</li>
+            </ul>
+          </div>
+          <div class="grupo-hab reveal">
+            <h3>Estudando agora</h3>
+            <ul class="lista-hab">
+              <li>Node.js</li><li>Docker</li><li>Redes</li><li>OWASP Top 10</li>
+              <li>TypeScript</li><li>Testes automatizados</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container cta-fim reveal">
+        <h2>Quer ver isso na prática?</h2>
+        <p>Cada habilidade acima aparece em algum projeto real, com código aberto.</p>
+        <a class="botao botao-solido" href="projetos.html">Ver projetos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-inner">
+      <p>© <span data-ano></span> Thomas Thome</p>
+      <p>Feito com HTML, CSS e café · <a href="https://github.com/ThomasOnTraining/portfolio" rel="noopener" target="_blank">Código-fonte</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

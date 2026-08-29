@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thomas Thome · Back-end &amp; Segurança</title>
+  <meta name="description" content="Portfólio de Thomas Thome: back-end, segurança e projetos fullstack construídos de ponta a ponta.">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho-inner">
+      <a href="index.html" class="logo">~/thomas-thome</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+      <nav id="nav" class="nav" aria-label="Navegação principal">
+        <a href="index.html" aria-current="page">Início</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <p class="sobretitulo entrada">Portfólio · Thomas Thome</p>
+      <h1 class="entrada d1">Foco em back-end e segurança, <em>e</em> o front-end eu mesmo construo.</h1>
+      <p class="lede entrada d2">
+        Estudante técnico de Desenvolvimento de Sistemas. Aprendo construindo de
+        ponta a ponta: a API que eu escrevo no servidor também recebe a interface
+        que eu desenho na tela.
+      </p>
+      <div class="acoes entrada d3">
+        <a class="botao botao-solido" href="projetos.html">Ver projetos</a>
+        <a class="botao" href="contato.html">Entrar em contato</a>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <div class="secao-cab reveal">
+          <h2>Projetos em destaque</h2>
+          <a class="link-seta" href="projetos.html">Todos os projetos</a>
+        </div>
+        <div class="grade grade-2">
+          <!-- TODO: destaque aqui os SEUS 1 ou 2 melhores projetos.
+               Modelo: problema → o que fez → desafio → links. -->
+          <article class="card reveal">
+            <div class="card-topo">
+              <span class="card-num">01</span>
+              <div class="tags"><span class="tag">Next.js 15</span><span class="tag">Supabase</span><span class="tag">TypeScript</span></div>
+            </div>
+            <h3>CartelaStudy</h3>
+            <p>Plataforma de estudos gratuita para o ENEM: trilhas, questões oficiais (API enem.dev com cache de 24h), simulado, redação e flashcards, com login e progresso por estudante no Supabase.</p>
+            <p class="card-desafio"><strong>Desafio:</strong> server actions + componentes client no App Router e Row Level Security no Postgres para isolar os dados de cada estudante.</p>
+            <div class="card-links">
+              <a href="https://cartela-study.vercel.app" rel="noopener" target="_blank">Demo</a>
+              <a href="https://github.com/ThomasOnTraining/CartelaStudy" rel="noopener" target="_blank">GitHub</a>
+            </div>
+          </article>
+          <article class="card reveal">
+            <div class="card-topo">
+              <span class="card-num">02</span>
+              <div class="tags"><span class="tag">Segurança</span><span class="tag">OWASP</span></div>
+            </div>
+            <h3>Maratona Tech 2026</h3>
+            <p>Site interativo sobre vulnerabilidades em sistemas criados por IA: o Broken Access Control, falha nº 1 do OWASP Top 10, com simulação ao vivo de ataque IDOR. Feito em grupo para a Maratona Tech.</p>
+            <p class="card-desafio"><strong>Desafio:</strong> traduzir um tema técnico para quem não é programadora; resolvemos com analogias do dia a dia e uma simulação interativa no lugar de código.</p>
+            <div class="card-links">
+              <a href="https://thomasontraining.github.io/MaratonaTech-2026/" rel="noopener" target="_blank">Demo</a>
+              <a href="https://github.com/ThomasOnTraining/MaratonaTech-2026" rel="noopener" target="_blank">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container">
+        <div class="secao-cab reveal"><h2>O que eu faço</h2></div>
+        <div class="grade grade-3">
+          <!-- TODO: ajuste os três textos ao seu perfil -->
+          <article class="card reveal">
+            <h3>Back-end</h3>
+            <p>APIs REST, autenticação e modelagem de dados. É onde eu me sinto em casa.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Segurança</h3>
+            <p>Estudo ofensiva e defensiva na prática: write-ups de CTF, análise de logs e noções de hardening em Linux.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Fullstack</h3>
+            <p>Levo minhas próprias APIs até a tela. Este site é um exemplo: feito à mão, HTML, CSS e JS puros, sem frameworks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="container cta-fim reveal">
+        <h2>Vamos conversar?</h2>
+        <p>Quer trocar ideia sobre back-end e segurança, ou tem um projeto em mente? Me chame.</p>
+        <a class="botao botao-solido" href="contato.html">Me chame</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-inner">
+      <p>© <span data-ano></span> Thomas Thome</p>
+      <p>Feito à mão com HTML, CSS e café · <a href="https://github.com/ThomasOnTraining/portfolio" rel="noopener" target="_blank">Código-fonte</a></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
