@@ -8,13 +8,16 @@
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="cabecalho">
     <div class="container cabecalho-inner">
-      <a href="index.html" class="logo">~/thomas-thome</a>
+      <a href="index.html" class="logo" aria-label="Thomas Thome · página inicial">
+        <svg class="logo-marca" viewBox="0 0 24 24" width="21" height="21" aria-hidden="true" focusable="false"><g fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2.75" y="2.75" width="18.5" height="18.5" rx="2"/><rect x="8.75" y="8.75" width="6.5" height="6.5" rx="1"/><path d="M2.75 2.75l6 6M21.25 2.75l-6 6M2.75 21.25l6-6M21.25 21.25l-6-6"/></g></svg>
+        <span>Thomas Thome</span>
+      </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Abrir menu">
         <span></span><span></span>
       </button>
@@ -29,6 +32,7 @@
 
   <main>
     <section class="hero container">
+      <canvas id="hipercubo" class="hipercubo" aria-hidden="true"></canvas>
       <p class="sobretitulo entrada">Portfólio · Thomas Thome</p>
       <h1 class="entrada d1">Foco em back-end e segurança, <em>e</em> o front-end eu mesmo construo.</h1>
       <p class="lede entrada d2">
@@ -119,5 +123,6 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script src="js/hypercube.js" defer></script>
 </body>
 </html>

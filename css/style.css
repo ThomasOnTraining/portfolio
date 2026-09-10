@@ -1,19 +1,19 @@
 /* =====================================================
    Portfólio · estilo principal
-   Paleta: #262621  #BFBFAE  #73675A  #8C8072  #BBB9B3
-   Tipografia: Fraunces (títulos) + Inter (corpo)
+   Paleta clara azulada: #F8FAFC  #FFFFFF  #0F172A  #334155  #64748B  #0284C7
+   Tipografia: Space Grotesk (títulos) + Inter (corpo)
    ===================================================== */
 
 :root{
-  --bg:#262621;
-  --surface:#2d2c25;
-  --text:#bfbfae;
-  --forte:#e6e4d8;      /* tom mais claro da paleta p/ títulos */
-  --claro:#bbb9b3;
-  --muted:#8c8072;
-  --accent:#73675a;
-  --borda:rgba(140,128,114,.3);
-  --fonte-titulo:"Fraunces",Georgia,"Times New Roman",serif;
+  --bg:#f8fafc;
+  --surface:#ffffff;
+  --text:#334155;
+  --forte:#0f172a;      /* títulos e destaques */
+  --claro:#475569;
+  --muted:#64748b;
+  --accent:#0284c7;
+  --borda:#e2e8f0;
+  --fonte-titulo:"Space Grotesk","Inter",system-ui,sans-serif;
   --fonte-corpo:"Inter",system-ui,-apple-system,sans-serif;
   --maxw:1040px;
   --raio:12px;
@@ -37,7 +37,7 @@ h1,h2,h3{font-family:var(--fonte-titulo);color:var(--forte);font-weight:600;line
 h1{font-size:clamp(2.4rem,6vw,4rem);letter-spacing:-.01em}
 h2{font-size:clamp(1.7rem,3.5vw,2.3rem)}
 p{max-width:62ch}
-::selection{background:var(--accent);color:#f5f3ea}
+::selection{background:var(--accent);color:#ffffff}
 :focus-visible{outline:2px solid var(--claro);outline-offset:3px;border-radius:2px}
 
 .container{max-width:var(--maxw);margin-inline:auto;padding-inline:clamp(1.25rem,4vw,2rem)}
@@ -45,12 +45,13 @@ p{max-width:62ch}
 /* ---------- Cabeçalho / navegação ---------- */
 .cabecalho{
   position:sticky;top:0;z-index:50;
-  background:rgba(38,38,33,.86);
+  background:rgba(248,250,252,.86);
   backdrop-filter:blur(8px);
   border-bottom:1px solid var(--borda);
 }
 .cabecalho-inner{display:flex;align-items:center;justify-content:space-between;height:4.25rem}
-.logo{font-family:var(--fonte-titulo);font-size:1.15rem;color:var(--forte);letter-spacing:.02em}
+.logo{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--fonte-titulo);font-size:1.15rem;color:var(--forte);letter-spacing:.02em}
+.logo-marca{color:var(--accent);flex-shrink:0}
 .logo:hover{color:var(--claro)}
 .nav{display:flex;gap:2rem}
 .nav a{font-size:.95rem;color:var(--muted);position:relative;padding-block:.25rem}
@@ -91,7 +92,14 @@ p{max-width:62ch}
 }
 
 /* ---------- Hero ---------- */
-.hero{padding-block:clamp(5rem,12vh,8rem) clamp(4rem,9vh,6rem)}
+.hero{position:relative;overflow:hidden;padding-block:clamp(5rem,12vh,8rem) clamp(4rem,9vh,6rem)}
+.hero>*:not(.hipercubo){position:relative;z-index:1}
+.hipercubo{
+  position:absolute;inset:0;z-index:0;width:100%;height:100%;
+  pointer-events:none;user-select:none;
+  opacity:0;animation:hipercubo-in 1.4s ease .5s forwards;
+}
+@keyframes hipercubo-in{to{opacity:.55}}
 .sobretitulo{
   font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;
   color:var(--muted);margin-bottom:1.5rem;
@@ -109,9 +117,9 @@ p{max-width:62ch}
   border-radius:999px;font-size:.95rem;font-weight:500;color:var(--forte);
   transition:all var(--dur) ease;
 }
-.botao:hover{border-color:var(--claro);background:rgba(140,128,114,.12);color:var(--forte)}
-.botao-solido{background:var(--claro);color:#262621;border-color:var(--claro)}
-.botao-solido:hover{background:var(--forte);color:#262621}
+.botao:hover{border-color:var(--accent);background:rgba(2,132,199,.08);color:var(--forte)}
+.botao-solido{background:var(--accent);color:#ffffff;border-color:var(--accent)}
+.botao-solido:hover{background:var(--forte);color:#ffffff}
 
 /* animação de entrada do hero */
 .entrada{animation:surgir .8s ease both}
@@ -212,4 +220,5 @@ p{max-width:62ch}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
   .reveal{opacity:1;transform:none}
+  .hipercubo{opacity:.55} /* frame estático permanece visível */
 }
