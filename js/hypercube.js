@@ -106,7 +106,7 @@
         var v = grid[r * cols + c];
         if (v < 0.04) continue;
         var ci = Math.min(chars.length - 1, Math.floor(v * chars.length));
-        var alpha = 0.14 + v * 0.5;
+        var alpha = 0.2 + v * 0.65;
         ctx.fillStyle = "rgba(2,132,199," + alpha.toFixed(3) + ")";
         ctx.fillText(chars.charAt(ci), c * cellW + halfW, r * cellH + halfH);
       }

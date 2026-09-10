@@ -5,14 +5,14 @@
    ===================================================== */
 
 :root{
-  --bg:#f8fafc;
+  --bg:#eef4f9;
   --surface:#ffffff;
   --text:#334155;
   --forte:#0f172a;      /* títulos e destaques */
   --claro:#475569;
   --muted:#64748b;
   --accent:#0284c7;
-  --borda:#e2e8f0;
+  --borda:#d9e2ec;
   --fonte-titulo:"Space Grotesk","Inter",system-ui,sans-serif;
   --fonte-corpo:"Inter",system-ui,-apple-system,sans-serif;
   --maxw:1040px;
@@ -45,7 +45,7 @@ p{max-width:62ch}
 /* ---------- Cabeçalho / navegação ---------- */
 .cabecalho{
   position:sticky;top:0;z-index:50;
-  background:rgba(248,250,252,.86);
+  background:rgba(238,244,249,.86);
   backdrop-filter:blur(8px);
   border-bottom:1px solid var(--borda);
 }
@@ -99,13 +99,11 @@ p{max-width:62ch}
   pointer-events:none;user-select:none;
   opacity:0;animation:hipercubo-in 1.4s ease .5s forwards;
 }
-@keyframes hipercubo-in{to{opacity:.55}}
+@keyframes hipercubo-in{to{opacity:.85}}
 .sobretitulo{
   font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;
   color:var(--muted);margin-bottom:1.5rem;
-  display:flex;align-items:center;gap:.85rem;
 }
-.sobretitulo::before{content:"";width:2.5rem;height:1px;background:var(--accent);flex-shrink:0}
 .hero h1{max-width:21ch;margin-bottom:1.5rem}
 .hero h1 em{font-style:italic;color:var(--claro)}
 .hero .lede{color:var(--claro);margin-bottom:2.5rem}
@@ -220,5 +218,5 @@ p{max-width:62ch}
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
   .reveal{opacity:1;transform:none}
-  .hipercubo{opacity:.55} /* frame estático permanece visível */
+  .hipercubo{opacity:.85} /* frame estático permanece visível */
 }
